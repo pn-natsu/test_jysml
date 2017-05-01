@@ -1,0 +1,778 @@
+@charset "utf-8";
+
+/*--------------------------------------------------*/
+/* structure
+----------------------------------------------------*/ 
+
+#container #side {
+	width: 330px;
+}
+
+#container #contents {
+	width: 660px;
+}
+
+#sp-sign {
+	display: none;
+}
+@media only screen and (max-width: 767px) {
+
+#container #side ,
+#container #contents {
+	width: auto;
+}
+
+#sp-sign {
+	display: block;
+}
+
+}
+/*--------------------------------------------------*/
+/* comp
+----------------------------------------------------*/ 
+
+#lead {
+	margin-bottom: 40px;
+}
+
+.pagetitle {
+	font-size: 2.0rem;
+	margin-bottom: 10px;
+}
+
+#contents .redBold {
+	color:#C00;
+}
+
+#contents p, #contents ul, #contents ol, #contents table {
+	margin-bottom:0;
+}
+
+#contents div.calendar {
+	text-align:center;
+}
+
+#contents div.calendar h2.month {
+	background-color:#D4D4D4;
+	border-top:solid 3px #444;
+	margin-bottom:15px;
+	padding:4px 0 5px;
+	font-size:123.1%;
+}
+
+iframe.yoyaku_menu {
+	width:100%;
+	height:1000px;
+}
+
+@media only screen and (max-width: 767px) {
+#lead {
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+#contents > div.calendar {
+	display: none;
+}
+
+#contents div.calendar h2.month {
+	display: none;
+}
+
+#contents div.flow ol li.num div.calendar {
+	height: 100px;
+	background: url(/lib/image/yoyaku/ajax-loader.gif) no-repeat center center;
+	overflow: hidden;
+}
+
+#contents div.flow ol li.num div.calendar.done {
+	height: auto;
+	background: none;
+}
+
+}
+
+/*--------------------------------------------------*/
+/* mail_notice
+----------------------------------------------------*/ 
+
+.mail_notice {
+	border:solid 2px #CC0000;
+	background-color:#FFC;
+	padding:10px 10px 0;
+}
+
+.mail_notice h2 {
+	color:#FF0000;
+}
+
+/*--------------------------------------------------*/
+/* mente
+----------------------------------------------------*/ 
+
+#contents div.mente {
+	border:solid 2px #CC0000;
+	background-color:#FFC;
+	padding:20px;
+	margin:100px 0;
+	text-align:center;
+}
+
+#contents div.mente h2 {
+	color:#FF0000;
+	font-size:20px;
+	margin-bottom:20px;
+}
+
+#contents div.mente p {
+	font-size:16px;
+}
+
+/*--------------------------------------------------*/
+/* ボタン
+----------------------------------------------------*/ 
+
+#contents div.calendar ul.move_month {
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#contents div.calendar ul.move_month li,
+#contents div.calendar ul.move_month li form {
+	display:inline;
+}
+
+#contents div.calendar ul.move_month li {	margin:0 15px;}
+#contents div.calendar ul.move_month li input {	vertical-align:top;}
+
+#contents div.calendar ul.move_month02 {	margin-bottom:5px;}
+#contents div.calendar ul.move_month02 li {	float:left;}
+#contents div.calendar ul.move_month02 li.next {	float:right;}
+#contents div.calendar ul.move_month02 li.now {
+	display:inline;
+	float:none;
+	font-size:123.1%;
+	font-weight:bold;
+	line-height:2;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+#contents div.calendar ul.move_month {
+	display: none;
+}
+
+#contents input.btn,
+#contents input[type=submit] {
+	padding: 5px 10px;
+	-webkit-appearance : none;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	font-size: 14px;
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#e7e7e7 100%);
+	background: linear-gradient(to bottom,  #f7f7f7 0%,#e7e7e7 100%);
+}
+
+#contents input[type=text] {
+	padding: 5px;
+	-webkit-appearance : none;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	font-size: 14px;
+}
+}
+/*--------------------------------------------------*/
+/* テーブルフォーマット
+----------------------------------------------------*/ 
+
+/*---------- 今日の色 ----------*/
+#contents div.calendar .noday {	background-color:#999999;}
+
+/*---------- 今日の色 ----------*/
+#contents div.calendar .tColor {	background-color:#FFFF00;}
+
+/*---------- 電話対応＆急患の色 ----------*/
+#contents div.calendar .sColor {	background-color:#99FF66;}
+
+/*---------- 10時から17時の色 ----------*/
+#contents div.calendar .dColor {	background-color:#FFFF66;}
+
+/*---------- 休診日の色 ----------*/
+#contents div.calendar .syuColor {	background-color:#FFFFFF;}
+
+/*---------- 診療日の色 ----------*/
+#contents div.calendar .wdColor {	background-color:#FFCCCC;}
+
+/*Shinryo(5) = "AM10:00～PM2:00"*/
+#contents div.calendar .ns5Color {	background-color:#D8BFD8;}
+
+/*Shinryo(6) = "PM2:00～PM5:00"*/
+#contents div.calendar .ns6Color {	background-color:#76EEC6;}
+
+/*Shinryo(7) = "PM5:00～PM8:00"*/
+#contents div.calendar .ns7Color {	background-color:#87CEFF;}
+
+/*Shinryo(8) = "AM9:30～PM1:00"*/
+#contents div.calendar .ns8Color {	background-color:#F4A460;}
+
+/*Shinryo(9) = "PM2:00～PM5:30"*/
+#contents div.calendar .ns9Color {	background-color:#CD5C5C;}
+
+
+#contents div.calendar table {
+	width:100%;
+	border-collapse:separate;
+	border-top:solid 1px #676767;
+	border-left:solid 1px #676767;
+	margin-bottom:5px;
+}
+
+#contents div.calendar th,
+#contents div.calendar td {
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:solid 1px #676767;
+	border-right:solid 1px #676767;
+}
+
+#contents div.calendar thead th {
+	background-color:#CCCCCC;
+}
+
+#contents div.calendar a:link {	color:#0033CC;	text-decoration:underline;}
+#contents div.calendar a:visited {	color:#0033CC;	text-decoration:underline;}
+#contents div.calendar a:hover {	color:#0033CC;	text-decoration:underline;}
+#contents div.calendar a:active {	color:#0033CC;	text-decoration:underline;}
+
+
+/*--------------------------------------------------*/
+/* 時間帯テーブル
+----------------------------------------------------*/ 
+
+#contents div.calendar table.time {
+	margin-bottom:5px;
+}
+
+#contents div.calendar table.time td {
+	width:33%;
+	padding:3px;
+}
+
+#contents div.calendar p.notice {
+	text-align:right;
+	font-size:85%;
+	margin-bottom:15px;
+}
+
+@media only screen and (max-width: 767px) {
+#contents div.calendar table.time {
+	margin-bottom: 10px;
+}
+#contents div.calendar table.time td {
+	font-size: 1.2rem;
+}
+
+
+}
+
+/*--------------------------------------------------*/
+/* カレンダー
+----------------------------------------------------*/ 
+
+/* 6ヶ月表示 */
+
+#contents ul.month_list {
+	letter-spacing: -.4em;
+}
+
+#contents ul.month_list li {
+	width:50%;
+	box-sizing: border-box;
+	padding:0 10px 10px 0;
+	letter-spacing: normal;
+	display: inline-block;
+}
+
+#contents ul.month_list li:nth-child(even) {
+	padding:0 0 10px 10px;
+}
+
+#contents ul.month_list li th,
+#contents ul.month_list li td {
+	padding:5px 0;
+}
+
+#contents ul.month_list li h3 {
+	font-size:123.1%;
+	margin-bottom:5px;
+}
+
+/* 1ヶ月表示 */
+#contents div.month_one th,
+#contents div.month_one td {
+	padding:10px 0;
+	width:14.3%;
+}
+
+#contents div.calendar p.back_m6 {
+	text-align:right;
+}
+
+@media only screen and (max-width: 767px) {
+
+#contents ul.month_list {
+	padding: 0 20px;
+	letter-spacing: normal;
+	width: 1px;
+	min-width: 100%;
+}
+
+
+#contents ul.month_list li,
+#contents ul.month_list li:nth-child(even) {
+	width:auto;
+	padding:0 0 10px 0;
+	display: block;
+}
+
+#contents ul.month_list li h3 {
+	font-size: 1.6rem;
+}
+#contents ul.month_list li h3 a {
+	pointer-events: none;
+	color: #333 !important;
+	text-decoration: none !important;
+}
+
+.slick-arrow {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+}
+
+.slick-arrow:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+}
+
+.slick-arrow,
+.slick-arrow:before {
+	width:8px;
+	height:15px;
+	background:none;
+}
+
+.slick-prev {
+	left: 0;
+}
+
+.slick-next {
+	right: 0;
+}
+
+.slick-prev:before {
+	background:url(/lib/image/yoyaku/icon_arrow_01.png) no-repeat;
+	background-size: 8px 15px;
+}
+
+.slick-next:before {
+	background:url(/lib/image/yoyaku/icon_arrow_02.png) no-repeat;
+	background-size: 8px 15px;
+}
+
+.slick-disabled {
+	display: none !important;
+}
+
+}
+
+/*--------------------------------------------------*/
+/* 予約フロー
+----------------------------------------------------*/ 
+
+#yoyaku_flow {
+	background-color:#FFF;
+	text-align:left;
+}
+
+#contents ul {
+	margin-bottom:0;
+}
+
+#contents div.flow {
+	border-bottom:solid 2px #D4D4D4;
+	margin-bottom:15px;
+}
+
+#contents div.flow ol li.num {
+	background:url(/lib/image/yoyaku/bg_flow_01.gif) no-repeat center bottom;
+	padding-bottom:20px;
+	margin-bottom:5px;
+	position:relative;
+	overflow: hidden;
+}
+
+#contents div.flow ol li.num.end {
+	background:none;
+	margin-bottom:0;
+}
+
+#contents div.flow ol li > h2 {
+	background: #D4D4D4;
+	border-left: solid 20px #444444;
+	position: relative;
+	font-size: 1.4rem;
+	padding: 5px 0 5px 5px;
+	margin-bottom: 15px;
+}
+
+#contents div.flow ol li > h2 span {
+	position: absolute;
+	color: #fff;
+	left: -14px;
+	top: 5px;
+}
+
+#contents div.flow ol div.navi {
+	width:50%;
+	float:right;
+	padding:7px;
+	background-color:#FFFFC8;
+	box-sizing: border-box;
+}
+
+#contents div.flow ol div.navi a {
+	color: #088FB0;
+	text-decoration: underline;
+}
+
+#contents div.flow ol div.navi p,
+#contents div.flow ol div.navi li {
+	line-height:1.3;
+}
+
+#contents div.flow ol div.select_status {
+	width:140px;
+	float:left;
+	padding-left:5px;
+}
+
+#contents div.flow ul.kind li {	margin-bottom:5px;}
+#contents div.flow ul.kind input {	margin-right:5px;}
+#contents div.flow p.send_status strong {	color:#444;	white-space:nowrap;}
+#contents div.flow p.jikantai {	font-size:108%;}
+#contents div.flow p.next {	font-size:x-small;}
+
+#contents div.reset {
+	text-align:center;
+}
+
+#contents div.reset input.btn {
+	width: 100%;
+	padding: 3px 10px;
+	box-sizing: border-box;
+}
+
+#contents div.flow .ymd {
+	line-height:2;
+}
+
+#contents div.flow input.text,
+#contents div.flow textarea.text {
+	border:solid 1px #D4D4D4;
+}
+
+#contents div.flow input.year { width:61px;}
+#contents div.flow input.month { width:43px;}
+#contents div.flow input.day { width:43px;}
+#contents div.flow input.item { width:248px;}
+#contents div.flow textarea.item { width:248px; height:70px; font-size:12px;}
+
+#contents input.gonext {
+	padding:3px 10px;
+	margin-top:5px;
+}
+
+#contents div.flow form.yoyakuinput {
+	margin-left:10px;
+}
+
+#contents div.flow dl.input dt {
+	margin-bottom:2px;
+}
+
+#contents div.flow dl.input dd {
+	margin-bottom:10px;
+}
+
+#contents div.flow dl.input dt.kibo {
+	font-weight:bold;
+	width:72px;
+	clear:both;
+	float:left;
+}
+
+#contents div.flow dl.input dd.kibo {
+	padding-left:72px;
+	font-weight:bold;
+	color:#C00;
+}
+
+#contents div.flow .send_last {
+	margin-bottom:10px;
+}
+
+
+#contents div.flow .send_last input.disabled {
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity:0.5;
+}
+
+#contents div.flow p.send_last {
+	margin-bottom:20px;
+}
+
+#contents div.flow p.send_notice {
+	margin-bottom:10px;
+}
+
+#contents div.flow div.notice_block {
+	padding:0 10px 10px;
+}
+
+#contents div.flow div.send_naiyo {
+	border-top:solid 1px #CCC;
+	border-bottom:solid 1px #CCC;
+	padding:10px 0;
+	margin:10px 0;
+}
+
+#contents div.flow div.send_naiyo li,
+#contents div.flow div.send_naiyo li p {
+	margin-bottom:5px;
+}
+
+#contents div.flow div.send_naiyo li strong {
+	color:#444;
+}
+
+
+#contents .email_notice {
+	color:#C00;
+	width:250px;
+	display:block;
+}
+
+#contents div.flow p.date_lost {
+	color:#C00;
+	margin-bottom:10px;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#contents .gotop {
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#contents .time_notice {
+	padding-top:10px;
+}
+
+#contents .time_noticebox {
+	background:#FFFFCC;
+	border:solid 2px #CC0000;
+	padding:10px;
+	color:#FF0000;
+	font-weight:bold;
+	font-size:12px;
+	margin:30px -155px 0 0;
+}
+
+#contents .time_noticebox.second {
+	margin-top:55px;
+}
+
+@media only screen and (max-width: 767px) {
+
+#contents div.flow ul.kind {
+	overflow: hidden;
+}
+
+#contents div.flow ul.kind li {
+	float: left;
+	width: 33.3%;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+#contents div.flow ul.kind li input {
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	margin: 0;
+}
+
+#contents div.flow ol div.navi {
+	width:auto;
+	float:none;
+	display: none;
+	padding: 10px;
+}
+
+#contents div.flow ol div.navi.on {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#contents div.flow ol div.navi li {
+	margin-top: 8px;
+}
+
+#contents div.flow ol div.select_status {
+	width:auto;
+	float:none;
+	padding: 0;
+}
+
+#contents div.flow ol div.select_status br {
+	display: none;
+}
+
+#contents div.flow ol div.select_status.ymd input[type=text] {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 16px;
+}
+
+#contents div.flow p.jikantai {
+	margin: 10px 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+#contents div.flow p.jikantai select {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 5px;
+	font-size: 16px;
+}
+
+
+#contents input.gonext {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#contents div.flow form.yoyakuinput {
+	margin: 0;
+}
+
+#contents div.flow p.next {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+#contents div.flow dl.input dt {
+	margin-bottom: 5px;
+}
+
+#contents div.flow input.item {
+	width: 100%;
+}
+
+#contents div.flow input[type=text],
+#contents div.flow select,
+#contents div.flow textarea {
+	font-size: 16px;
+	padding: 3px;
+	box-sizing: border-box;
+}
+
+#contents .email_notice {
+	width: auto;
+}
+
+#contents div.flow .send_last input {
+	width: 100%;
+	padding: 3px 10px;
+	box-sizing: border-box;
+}
+
+#contents div.flow div.notice_block {
+	padding: 0 0 10px 0;
+}
+
+#contents .gotop {
+	margin-top: 20px;
+}
+
+#contents .gotop a {
+	text-decoration: underline !important;
+	color: #088FB0 !important;
+}
+
+#contents div.flow div.send_naiyo p {
+	margin-bottom: 10px;
+}
+
+#contents div.flow div.send_naiyo .kibo br {
+	display: none;
+}
+
+#contents .time_noticebox {
+	margin:10px 0 0 0;
+	font-size: 1.4rem;
+	line-height: 1.6;
+}
+
+#contents .time_noticebox.second {
+	margin:10px 0 0 0;
+}
+
+}
+
+/*--------------------------------------------------*/
+/* エラー
+----------------------------------------------------*/ 
+
+span.error {
+	color: #ca1566;
+	display: none;
+}
+
+input.error,
+select.error,
+textarea.error {
+	background: #FFECEC;
+}
+
+input[type=submit] {
+	cursor: pointer;
+}
+
+.reset.top {
+	margin-bottom: 15px;
+}
+
+.mail_notice_side {
+	border: solid 2px #CC0000;
+	background-color: #FFC;
+	padding: 10px;
+	color: #FF0000;
+	font-weight: bold;
+	margin-bottom: 10px !important;
+}

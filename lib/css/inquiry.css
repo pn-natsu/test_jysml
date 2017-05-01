@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------*/
+/* elements
+----------------------------------------------------*/ 
+
+.tableformat01 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.tableformat01 th {
+	width: 30%;
+}
+
+.tableformat01 td {
+	width: 70%;
+}
+
+@media only screen and (max-width: 767px) {
+
+.tableformat01 th,
+.tableformat01 td {
+	width: auto;
+	display: block;
+	text-align: left;
+}
+
+
+}
+
+/*--------------------------------------------------*/
+/* form elements
+----------------------------------------------------*/ 
+
+#contents form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#inq_form input[type=text],
+#inq_form textarea {
+	-webkit-appearance: none;
+	padding: 5px;
+	box-sizing: border-box;
+	border: solid 1px #ccc;
+	font-size:16px;
+}
+
+#inq_form input[type=text],
+#inq_form textarea {
+	width: 100%;
+}
+
+#inq_form select {
+	padding: 5px;
+	box-sizing: border-box;
+	border: solid 1px #ccc;
+	font-size:16px;
+}
+
+#inq_form .name input {
+	width: 50%;
+}
+
+#inq_form input.zip01 {
+	width: 3em;
+}
+
+#inq_form input.zip02 {
+	width: 5em;
+}
+
+#inq_form input.tel {
+	width: 50%;
+}
+
+#inq_form .birth select {
+	width: 10%;
+	margin: 0 5px;
+}
+
+#inq_form .birth select:first-child {
+	width: 15%;
+	margin-left: 0;
+}
+
+#inq_form textarea.comment {
+	height: 150px;
+}
+
+#inq_form .submit {
+	text-align: center;
+	position: relative;
+	margin-top: 20px;
+}
+
+#inq_form input[type=submit] {
+	-webkit-appearance: none;
+	border: none;
+	background:#db536f;
+	border-radius:6px;
+	box-shadow:0 3px 0 0 #a03b4f;
+	display:inline-block;
+	padding:12px 0;
+	width: 200px;
+	font-weight:bold;
+	font-size:1.6rem;
+	color:#FFF;
+	text-align:center;
+	position:relative;
+}
+
+#inq_form .submit .back {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+a.btn_back {
+	display:inline-block;
+	padding:12px 40px;
+	background: #eee;
+	border-radius:6px;
+	box-shadow:0 3px 0 0 #ccc;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+
+.thanks {
+	text-align: center;
+}
+
+a[href^="tel:"] {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+#contents form {
+	width: auto;
+}
+
+#inq_form .name input,
+#inq_form input.tel {
+	width: 100%;
+}
+
+#inq_form .birth select {
+	width: 20%;
+}
+
+#inq_form .birth select:first-child {
+	width: 30%;
+}
+
+#inq_form input[type=submit] {
+	width: 100%;
+}
+
+#inq_form .submit .back {
+	position: static;
+	margin-top: 20px;
+}
+
+a.btn_back {
+	display:block;
+	padding:12px 0;
+}
+
+.thanks {
+	text-align: left;
+}
+
+a[href^="tel:"] {
+	text-decoration: underline;
+}
+
+
+}
+
+/*--------------------------------------------------*/
+/* エラー
+----------------------------------------------------*/ 
+
+p.error {
+	color: #ca1566;
+	display: none;
+	margin: 5px 0 0 0;
+}
+
+input.error,
+select.error,
+textarea.error {
+	background: #FFECEC;
+}
+
+input[type=submit] {
+	cursor: pointer;
+}

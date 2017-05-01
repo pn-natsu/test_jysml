@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+
+/*----------------------------------------------------*/ 
+/* index.html  timetable
+------------------------------------------------------*/ 
+
+.lead {
+	font-weight:bold;
+	color:#0888a7;
+	font-size:1.8rem;
+}
+
+.indexList {
+	overflow:hidden;
+	margin-bottom:15px;
+}
+
+.indexList li {
+	box-sizing:border-box;
+}
+
+.indexList li a {
+	display:block;
+	text-decoration:none;
+	background: url(/lib/image/cmn/icon_link_01_bluegreen.png) no-repeat right 10px center;
+	padding:.5em 2em .5em 4em;
+	border-bottom:1px dashed #0888a7;
+	position:relative;
+}
+
+.indexList li a:hover {
+	background-color:#FFF;
+}
+
+.indexList li span {
+	position:absolute;
+	top:50%;
+	left:10px;
+	transform:translateY(-.5em);
+	font-weight:bold;
+	color:#0888a7;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+
+}
+

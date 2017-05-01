@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+
+/*----------------------------------------------------*/ 
+/* comp
+------------------------------------------------------*/ 
+
+.lead {
+	color:#05576b;
+	font-weight:bold;
+	font-size:2.0rem;
+}
+
+.floRp {
+	margin:0 0 10px 10px;
+}
+
+.floRp3{
+	background:#FFF;
+	margin:0 0 10px 10px;
+	width:330px;
+	float:right;
+}
+
+.floRp3 img {
+	width:100%;
+	max-width:100%;
+}
+
+@media only screen and (max-width: 767px) {
+
+.floRp3{
+	float:none;
+	text-align:center;
+}
+
+#contents .row img.fixWidth {
+	max-width:100%;
+	width:auto;
+}
+
+}
+
+
+/* imgbox colum */
+
+#contents div.imgbox2clm,
+#contents div.imgbox3clm {
+	overflow:hidden;
+}
+
+
+#contents div.imgbox2clm ul li {
+	float:left;
+	text-align:center;
+	padding:0 10px 5px;
+	width:50%;
+}
+
+#contents .imgbox3clm ul li {
+	float:left;
+	text-align:center;	
+	padding:0 10px 5px;
+	width:33%;
+	box-sizing:border-box;
+}
+
+#contents .imgbox3clm ul li img {
+	max-width:100%;
+}
+
+#contents .imgbox2clm li span.cap,
+#contents .imgbox3clm li span.cap {
+	display:block;
+	text-align:center;
+	padding:5px 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+	
+
+/*----------------------------------------------------*/ 
+/* index.html 
+------------------------------------------------------*/ 
+
+.linkbox {
+	overflow:hidden;
+}
+
+.linkbox li {
+	float:left;
+	width:320px;
+	margin:0 20px 20px 0;
+}
+
+.linkbox li a {
+	text-decoration:none;
+}
+
+.linkbox li dt {
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 0;
+	text-decoration:underline;
+}
+
+.linkbox li dd {
+	font-size:14px;
+	line-height:1.4;
+}
+
+@media only screen and (max-width: 767px) {
+
+.linkbox li {
+	float:none;
+	width:100%;
+	margin:0 0 20px 0;
+	display:table;
+}
+
+.linkbox li a {
+	text-decoration:none;
+}
+
+.linkbox li dl,
+.linkbox li .thumb {
+	display:table-cell;
+	vertical-align:top;
+}
+
+.linkbox li .thumb {
+	width:37%;
+	padding-right:3%;
+}
+
+.linkbox li dt {
+	font-size:14px;
+	font-weight:bold;
+	padding:0 0 5px;
+}
+
+.linkbox li dd {
+	font-size:12px;
+	line-height:1.4;
+}
+
+}
+
+
+/*----------------------------------------------------*/ 
+/* damon.html 
+------------------------------------------------------*/ 
+
+
+#contents div.daemon_meca {
+	width:100%;
+	border:4px solid #CCCC00;
+	padding:15px 15px 15px 15px;
+	clear:both;
+	margin-bottom:20px;
+	box-sizing:border-box;
+	overflow:hidden;
+	background:#FFF;
+}
+
+#contents div.daemon_meca h3 {
+	background:#CCCC00;
+	padding:4px;
+	text-align:center;
+	margin:0 0 15px;
+}
+
+#contents div.daemon_meca ul {
+	display:table;
+	width:80%;
+	margin:0 auto;
+}
+
+#contents div.daemon_meca ul li {
+	width:50%;
+	text-align:center;
+	display:table-cell;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+
+#contents .daemon_meca li span.cap {
+	display:block;
+	text-align:left;
+	padding:10px 0 0 0;
+}
+
+@media only screen and (max-width: 767px) {
+
+#contents div.daemon_meca ul {
+	display:table;
+	width:100%;
+	margin:0 auto;
+}
+
+}
+
+
+
+/*----------------------------------------------------*/ 
+/* index.html 
+------------------------------------------------------*/ 
+
+.innerlink {
+	padding:1em 2em;
+	background:#FFF;
+}
+
+.innerlink li {
+	margin-bottom:5px;
+}
+
+.innerlink li:before {
+	content:"▼";
+	font-size:10px;
+	color:#CCC;
+	display:inline-block;
+	margin-right:1em;
+}
+
+.boxarea01 {
+	background:#FFF;
+	padding:20px;
+	border:3px dotted #0888a7;
+	margin-bottom:10px;
+}
+
+.boxarea01 h2 {
+	font-size:2.0rem;
+	color:#0888a7;
+	font-weight:bold;
+	position:relative;
+	padding-right:20px;
+	padding-left:25px;
+	text-indent:-25px;
+	cursor:pointer;
+}
+
+.boxarea01 h2 img {
+	vertical-align:middle;
+	margin-right:10px;
+}
+
+.boxarea01 h2.active:after {
+	content:"";
+	position:absolute;
+	top:5px;
+	right:0;
+	width:15px;
+	height:15px;
+	background:url(/lib/image/chiryo/yobou/icon_index_03.png) no-repeat 0 0;
+	background-size:15px auto;
+	border:2px solid #66CC33;
+}
+
+.boxarea01 .accobox {
+	display:none;
+	padding-top:20px;
+}
+
+.boxarea01 .closebox {
+	margin:0;
+}
+
+.boxarea01 .closebox .close {
+	cursor:pointer;
+	border-radius:4px;
+	background:#EEE;
+	text-align:center;
+	padding:4px;
+	display:block;
+	text-decoration:none;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+
+
+
+/*----------------------------------------------------*/ 
+/* index.html 
+------------------------------------------------------*/ 
+
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+
+
+
+/*----------------------------------------------------*/ 
+/* index.html 
+------------------------------------------------------*/ 
+
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+
+
+
+/*----------------------------------------------------*/ 
+/* incognito.html 
+------------------------------------------------------*/ 
+
+.incognitoMerit {
+	margin:0 0 0 2em;
+}
+
+
+.incognitoMerit .htype03 {
+	margin-left:-1.5em;
+}
+
+.incognitoMerit h3 {
+	margin-bottom:5px;
+}
+
+.incognitoMerit p{
+}
+
+@media only screen and (max-width: 767px) {
+
+
+}
+
+
+
+
+/*----------------------------------------------------*/ 
+/* mrc.html 
+------------------------------------------------------*/ 
+
+.clr {
+	clear:both;
+}
+
+
+.ovh {
+	overflow:hidden;
+}
+
+
+
+.mrc_photo3 {
+	overflow:hidden;
+	margin-bottom:30px;
+}
+
+.mrc_photo3 li {
+	width:33%;
+	padding:0 1%;
+	float:left;
+	box-sizing:border-box;
+}
+
+.mrc_photo3 li img {
+	width:100%;
+	max-width:100%;
+	height:auto;
+	margin-bottom:5px;
+}
+
+.mrc_photo3 li span {
+	text-align:center;
+	display:block;
+}
+
+.mrc_photo1rp {
+	float:right;
+	padding:0 0 10px 10px;
+}
+
+.mrc_photo1lp {
+	float:left;
+	padding:0 10px 10px 0;
+}
+
+/**/
+
+.mrcSamplecaseList {
+	overflow:hidden;
+	margin:40px 0;
+}
+
+.mrcSamplecaseList .case {
+	float:left;
+	width:48%;
+	margin:0 0 30px 0;
+}
+
+.mrcSamplecaseList .case:nth-child(2n-1) {
+	margin-right:4%;
+}
+
+.mrcSamplecaseList .case h3 {
+	padding:5px;
+	text-align:center;
+	color:#FFF;
+	background:#0888a7;
+	margin-bottom:10px;
+	font-size:1.8rem;
+}
+
+
+.mrcSamplecaseList .case .photo {
+	max-width:100%;
+	height:auto;
+	margin-bottom:10px;
+}
+
+.mrcSamplecaseList .case .link {
+	text-align:center;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.mrc_photo3 li {
+	width:50%;
+	padding:0 1%;
+	box-sizing:border-box;
+}
+
+
+.mrcSamplecaseList .case {
+	float:none;
+	width:100%;
+	margin:0 0 30px 0;
+}
+
+.mrcSamplecaseList .case:nth-child(2n-1) {
+	margin-right:0%;
+}
+
+}

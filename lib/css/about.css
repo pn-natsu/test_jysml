@@ -1,0 +1,344 @@
+@charset "UTF-8";
+
+
+section {
+	overflow:hidden;
+}
+
+/*----------------------------------------------------*/ 
+/* index.html  timetable
+------------------------------------------------------*/ 
+
+.timetable td {
+	text-align:center;
+}
+
+.walkway {
+	overflow:hidden;
+	margin:30px -30px 0 0;
+}
+
+.walkway li {
+	display:table-cell;
+	vertical-align:top;
+	padding:0 30px 0 0;
+	position:relative;
+}
+
+.walkway li p {
+	padding:10px 0 0 0;
+}
+
+.walkway .allow {
+	position:absolute;
+	top:50%;
+	margin-top:-45px;
+	right:3px;
+	z-index:10;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.timetable td,
+.timetable th {
+	padding:.5em;
+	font-size:10px;
+}
+
+.walkway li {
+	display:block;
+	vertical-align:top;
+	padding:0 30px 0 0;
+	position:relative;
+	text-align:center;
+}
+
+.walkway .allow {
+	position:relative;
+	top:auto;
+	margin:-10px 0 10px;
+	right:auto;
+	z-index:10;
+	text-align:center;
+}
+
+.walkway .allow img {
+	transform: rotate(90deg);
+}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+#contents #least .least-gallery li,
+#contents #least .least-gallery li a  {
+	width:100%;
+	height:auto;
+}
+
+#contents  #least .least-gallery li img {
+	width:100%;
+	height:auto;
+}
+
+}
+
+/*----------------------------------------------------*/ 
+/* price.html tableformat_cost
+------------------------------------------------------*/ 
+
+table.tableformat_cost {
+	border-left:1px solid #C2C2C2;
+	border-top:1px solid #C2C2C2;
+	border-collapse:separate;
+	margin-bottom:40px;
+}
+
+table.tableformat_cost th,
+table.tableformat_cost td {
+	border-right:1px solid #C2C2C2;
+	border-bottom:1px solid #C2C2C2;
+	padding:.5em 1em;
+	background:#FFF;
+	text-align:left;
+}
+
+table.tableformat_cost th {
+	background:#F2F2F2;
+	font-weight:bold;
+}
+
+table.tableformat_cost tr.blue1 td,
+table.tableformat_cost tr.blue1 th {	background:#FFFFFF;}
+table.tableformat_cost tr.blue2 td,
+table.tableformat_cost tr.blue2 th {	background:#F2F9FB;}
+table.tableformat_cost tr.blue3 td,
+table.tableformat_cost tr.blue3 th {	background:#E6F4F7;}
+table.tableformat_cost tr.blue4 td,
+table.tableformat_cost tr.blue4 th {	background:#C1E3EB;}
+table.tableformat_cost tr.blue5 td,
+table.tableformat_cost tr.blue5 th {	background:#83C7D7;}
+
+table.tableformat_cost th span {
+	font-weight:normal;
+}
+
+table.tableformat_cost th.sp01 {
+	border-bottom:none;
+}
+
+table.tableformat_cost th.sp02 {
+	border-top:none;
+	width:10px;
+}
+
+table.tableformat_cost th.sp03 {
+	border-top:1px solid #C2C2C2;
+}
+
+table.tableformat_cost td.line01 {
+	border-bottom:none;
+}
+
+table.tableformat_cost td.line02 {
+	border-top:1px solid #C2C2C2;
+}
+
+table.tableformat_cost span {
+	font-size:85%;
+	color:#444;
+}
+
+
+/* cost表2 */
+
+table.cost02 th {
+	text-align:left;
+}
+
+table.cost02 td.img {
+	width:25%;
+}
+
+table.cost02 .listtype01 li {
+	padding-left:1em;
+	text-indent:-1em;
+	margin-bottom:20px;
+}
+
+table.cost02 .listtype01 li:before {
+	content:"・";
+}
+
+table.cost02 th span {
+	float:left;
+	padding:5px 0 0;
+}
+
+table.cost02 .categoryLink {
+	margin:0 0 0 0;
+	float:right;
+}
+
+table.cost02 .categoryLink li {
+	margin:0 .5em 0 0;
+}
+
+table.cost02 .categoryLink li a  {
+	border-radius:1em;
+	display:inline-block;
+	padding:5px 1em 5px 1em;
+	font-size:1.2rem;
+	color:#FFF;
+	text-align:center;
+	text-decoration:none;
+	position:relative;
+	background:#0888a7 ;
+}
+
+
+table.cost02 .categoryLink li a:hover{
+	background-color:#05576B;
+	text-decoration:none;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+table.cost02 td {
+	display:block;
+	border-right:1px solid #C2C2C2;
+	box-sizing:border-box;
+}
+
+table.cost02 td.img {
+	width:100%;
+	text-align:center;
+}
+
+}
+
+
+/*----------------------------------------------------*/ 
+/* price.html cost
+------------------------------------------------------*/ 
+
+#contents .otherprice {
+	overflow:hidden;
+}
+
+#contents .otherprice > dt {
+	padding:0 0 0 0;
+	font-weight:none;
+	clear:both;
+	float:left;
+}
+
+#contents .otherprice > dd {
+	padding:0 0 0 0;
+	float:left;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+#contents .otherprice {
+	margin-top:1em;
+}
+
+#contents .otherprice > dt {
+	padding:0 0 0 0;
+	font-weight:bold;
+	float:none;
+}
+
+#contents .otherprice > dd {
+	margin-bottom:1em;
+}
+
+}
+
+/*----------------------------------------------------*/ 
+/* cost
+------------------------------------------------------*/ 
+
+.flow_lead {
+	color:#05576b;
+	font-weight:bold;
+}
+
+.flowlist {
+	margin: 0 2em;
+}
+
+.flowlist li {
+	padding-left:12px;
+	text-indent:-12px;
+	margin-bottom:10px;
+}
+
+.flowlist li:before {
+	content:"";
+	background:url(/lib/image/cmn/icon_link_01_red.png) no-repeat 0 0;
+	background-size:7px auto;
+	height:12px;
+	width:12px;
+	display:inline-block;
+}
+
+
+/*----------------------------------------------------*/ 
+/* staff.html
+------------------------------------------------------*/ 
+
+.staffBox {
+	overflow:hidden;
+}
+
+.staffBox .photo {
+	overflow:hidden;
+	float:left;
+	width:300px;
+}
+
+.staffBox .profile {
+	overflow:hidden;
+	float:right;
+	width:700px;
+}
+
+.staffBox .profile h2.htype02 {
+	margin-top:0px;
+}
+
+.staffBox .profile h4 {
+	margin-bottom:5px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.staffBox .photo {
+	overflow:hidden;
+	float:none;
+	width:100%;
+	text-align:center;
+}
+
+.staffBox .photo img {
+	width:100%;
+	max-width:400px;
+}
+
+
+.staffBox .profile {
+	overflow:hidden;
+	float:none;
+	width:100%;
+	text-align:center;
+}
+
+
+
+}

@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/*--------------------------------------------------*/
+/* structure
+----------------------------------------------------*/ 
+
+#container #side {
+	width: 280px;
+}
+
+#container #contents {
+	width: 690px;
+}
+
+#container #side section {
+	margin-top: 40px;
+}
+
+#container #side aside > section:first-child {
+	margin-top: 0;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+#container #side,
+#container #contents {
+	width: auto;
+}
+
+#container #side {
+	border-top: solid 1px #ccc;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+
+
+
+}
+
+/*--------------------------------------------------*/
+/* contents
+----------------------------------------------------*/ 
+
+article .entry:first-child section {
+	margin-top: 0;
+}
+
+.entry h2 span {
+	display: block;
+	font-size: 1.4rem;
+	color: #088fb0;
+	margin-bottom: 5px;
+}
+
+/* pagination */
+
+.pagination {
+    clear: both;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.pagination ul {
+	letter-spacing:-.4em;
+	margin:0;
+}
+
+.pagination li {
+	display:inline-block;
+	letter-spacing:normal;
+}
+
+.pagination span, .pagination a {
+    display: block;
+    float: left;
+    margin: 7px 7px 7px 0;
+    padding: 10px 12px 9px 12px;
+    width: auto;
+    color: #000;
+				border: solid 1px #ccc;
+    text-decoration: none;
+	background: #fff;
+}
+.pagination a:hover {
+    background: #0888a7;
+				color: #fff;
+}
+.pagination .current {
+    background: #0888a7;
+				color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+
+.entry {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: dotted 1px #ccc;
+}
+
+.entry:last-child {
+	border-bottom: none;
+}
+
+}
+
+/*--------------------------------------------------*/
+/* side
+----------------------------------------------------*/ 
+
+#side .htype03 {
+	margin-bottom: 10px;
+}
+
+.list_side01 {
+	overflow:hidden;
+	margin-bottom:15px;
+}
+
+.list_side01 li {
+	box-sizing:border-box;
+}
+
+.list_side01 li a {
+	display:block;
+	text-decoration:none;
+	background: url(/lib/image/cmn/icon_link_01_bluegreen.png) no-repeat right 10px center;
+	padding:.5em 2em .5em 0;
+	border-bottom:1px dashed #0888a7;
+	position:relative;
+}
+
+.list_side01 li a:hover {
+	background-color:#FFF;
+}
+

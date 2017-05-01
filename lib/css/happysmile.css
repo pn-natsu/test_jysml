@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*--------------------------------------------------*/
+/* cmn
+----------------------------------------------------*/ 
+
+.pagetitle {
+	font-size: 2.0rem;
+	margin-bottom: 10px;
+}
+
+/*--------------------------------------------------*/
+/* backnumber
+----------------------------------------------------*/ 
+
+.backnumber {
+	background: #eee;
+	padding: 15px 25px 5px;
+	margin-bottom: 20px;
+}
+
+.backnumber .title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.backnumber .bnlink {
+	overflow: hidden;
+}
+
+.backnumber .bnlink > li {
+	float: left;
+	width: 20%;
+	margin-bottom: 10px;
+}
+
+.backnumber .bnlink > li dt a {
+	color: #088FB0;
+}
+
+.backnumber .bnlink > li dt a:before {
+	content: "";
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 4px 0 4px 6px;
+border-color: transparent transparent transparent #088eb0;
+
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	position: relative;
+	top: -2px;
+}
+
+.backnumber .bnlink dd {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+.backnumber .bnlink > li {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.backnumber .bnlink > li:nth-child(even) {
+	padding-left: 10px;
+}
+
+}
+
+/*--------------------------------------------------*/
+/* smilelist
+----------------------------------------------------*/ 
+
+.smilelist h2 {
+	font-size: 2.0rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.smilelist > ul {
+	margin-left: -20px;
+	letter-spacing: -.4em;
+}
+
+.smilelist > ul li {
+	letter-spacing: normal;
+	display: inline-block;
+	width: 20%;
+	box-sizing: border-box;
+	padding: 0 0 20px 20px;
+	vertical-align: top;
+}
+
+.smilelist > ul li dt {
+	margin-bottom: 10px;
+	position: relative;
+	text-align: center;
+	background: #eee;
+}
+
+.smilelist > ul li dt img {
+	max-width: 100%;
+	height: auto;
+}
+
+.smilelist > ul li dd.staff {
+	background: #DAEEF3;
+	padding: 15px;
+	margin-top: 15px;
+	position: relative;
+	border-radius: 5px;
+}
+
+.smilelist > ul li dd.staff:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 7.5px 10px 7.5px;
+	border-color: transparent transparent #daeef3 transparent;
+	position: absolute;
+	top: -10px;
+	left: 50%;
+	margin-left: -8px;
+}
+
+@media only screen and (max-width: 767px) {
+
+.smilelist h2 {
+	font-size: 1.8rem;
+}
+
+.smilelist > ul li {
+	width: 50%;
+}
+
+
+}
+
+/*----------------------------------------------------*/ 
+/* boxer
+-----------------------------------------------------*/ 
+
+.boxer.icon:after {
+	content:"";
+	display:block;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	height:38px;
+	width:35px;
+	background: url(/lib/image/cmn/icon_boxer.png) no-repeat;
+}
+
+/*----------------------------------------------------*/ 
+/* edit
+-----------------------------------------------------*/ 
+
+#edit {
+	background-color:#FFF;
+}
+
+#edit div.err_msg {
+	width:300px;
+	margin:50px auto 0;
+	padding:30px;
+	background-color:#F9F9F9;
+	border:solid 1px #CCC;
+}
+
+/*----------------------------------------------------*/ 
+/* new
+-----------------------------------------------------*/ 
+
+.smile_regist {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.mode_select {
+	background: #eee;
+	padding: 10px;
+	margin-bottom: 20px;
+	letter-spacing: -.4em;
+	text-align: center;
+}
+
+.mode_select li {
+	letter-spacing: normal;
+	display: inline-block;
+}
+
+.mode_select li:before {
+	content: "｜";
+	margin: 0 10px;
+}
+
+.mode_select li:first-child:before {
+	display: none;
+}
+
+.upload_first {
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.upload_second select,
+.upload_second input[type=text] {
+	padding: 5px;
+	font-size: 16px;
+	border: solid 1px #ccc;
+	box-sizing: border-box;
+	width: 30%;
+}
+
+.upload_second input[type=text] {
+	-webkit-appearance:none;
+}
+
+.upload_second .timearea dt,
+.upload_second .timearea dd {
+	margin-bottom: 10px;
+}
+
+.upload_photo {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.upload_photo img {
+	max-width: 100%;
+	height: auto;
+}
+
+.upload_second .comment {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.upload_second .comment > * {
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+}
+
+.upload_second .comment > *:first-child {
+	padding: 0 10px 0 0;
+}
+
+.upload_second .comment dt {
+	margin-bottom: 10px;
+}
+
+.upload_second .comment textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-appearance:none;
+	border: solid 1px #ccc;
+}
+
+.upload_second .submit {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.upload_second .submit input[type=submit] {
+	-webkit-appearance: none;
+	border: none;
+	background:#db536f;
+	border-radius:6px;
+	box-shadow:0 3px 0 0 #a03b4f;
+	display:inline-block;
+	padding:12px 0;
+	width: 200px;
+	font-weight:bold;
+	font-size:1.6rem;
+	color:#FFF;
+	text-align:center;
+	position:relative;
+}
+
+.upload_second .submit.delete input[type=submit] {
+	background: #ff0000;
+}
